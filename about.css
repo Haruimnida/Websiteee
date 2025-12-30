@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN BACKGROUND */
+.main {
+    width: 100%;
+    height: 109vh;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(b.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* CENTER THE CONTENT */
+.icon {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    height: 100vh;
+}
+
+.text-box {
+    text-align: center;       /* center text inside the box */
+}
+
+/* BIG MAIN TITLE */
+.logo {
+    font-size: 100px;     
+    font-weight: bold;
+    color: white;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+/* CENTERED SUBTITLE */
+.description {
+    margin-top: 20px;       /* spacing below ABOUT */
+    font-size: 40px;        /* medium-large size for subtitle */
+    font-weight: 600;       /* bold but lighter than ABOUT */
+    color: #ffffff;         /* white text */
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+
+/* FADE-IN TRANSITION */
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Images row - spread evenly */
+.image-row {
+    display: flex;
+    justify-content: space-between;  /* images spaced across the row */
+    align-items: center;
+    margin-top: 30px;
+    width: 90%;                     /* leave some margin on sides */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Medium-sized images */
+.medium-img {
+    width: 30%;                      /* medium size, fits nicely 3 images */
+    height: auto;
+    border-radius: 10px;             /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.medium-img:hover {
+    transform: scale(1.05);          /* hover zoom effect */
+}
+
+/* Existing content paragraph style */
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Georgia;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 20px;
+}
